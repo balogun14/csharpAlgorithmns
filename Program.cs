@@ -40,7 +40,7 @@ class Program
 
         // CountSetBit.Start();
         // ArrayProblems.ArrayProblem.RotateByKtimes();
-        Sorting.SelectionSort();
+        Sorting.BubbleSort();
 
     }
     public static void PrintDivisor(int n)

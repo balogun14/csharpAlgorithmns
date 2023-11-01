@@ -19,6 +19,31 @@ class Sorting
         }
         ArrayProblem.PrintItems(arr);
     }
+    public static void BubbleSort()
+    {
+        int[] arr = { 10, 18, 12, 23, 45, 56 };
+        int swapped = 0; //This is for optimization 
+        for (int i = 0; i < arr.Length - 1; i++)
+        {
+            for (int j = 0; j < arr.Length - 1 - i; j++)
+            {
+                if (arr[j] > arr[j + 1])
+                {
+                    swap(arr, j, j + 1);
+                    swapped = 1;
+                }
+                else
+                {
+                    swapped = 0;
+                }
+            }
+            if (swapped == 0)
+            {
+                break;
+            }
+        }
+        ArrayProblem.PrintItems(arr);
+    }
 
     private static void swap(int[] arr, int i, int j)
     {
